@@ -6,28 +6,64 @@
 .header > div {
   float: left;
   padding: 15px;
+  font-weight: 800;
 }
 
 .banner {
-  height: 300px;
+  height: 350px;
   background-color: #ddd;
+  background-image: url('../img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner_title1 {
+  color: white;
+  font-size: 4em;
+  font-weight: 800;
+  line-height: 1em;
+}
+
+.banner_title2 {
+  color: white;
+  font-size: 2em;
+  font-weight: 100;
+  line-height: 1em;
+}
+
+.btn_hello {
+  background-color: darkorange;
+  padding: 15px 30px;
+  width: 100px;
+  text-align: center;
+  color: white;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.banner_content {
+  position: absolute;
+  left: 200px;
+  bottom: 30px;
 }
 
 .statement {
   text-align: center;
-  padding: 20px;
+  padding: 20px 70px;
 }
 
 .services {
   padding: 20px;
   box-sizing: border-box;
   overflow: auto;
-  background: #eee;
+  background-color: #eee;
 }
 
 .services_header {
   text-align: center;
   padding-bottom: 20px;
+  font-size: 1.5em;
 }
 
 .service {
@@ -54,10 +90,36 @@
 .service_container {
   border: 1px solid gainsboro;
   box-sizing: border-box;
-  height: 200px;
+  height: 300px;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   background-color: white;
+  position: relative;
+  box-shadow: 1px 1px 2px gainsboro;
+  cursor: pointer;
+}
+
+.svc_logo {
+  padding: 8px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+}
+
+.service_title {
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+.service_description {
+  padding: 8px;
+  line-height: 1.5em;
+}
+
+.service_learnmore {
+  text-align: center;
+  font-size: 0.8em;
+  color: #C30;
+  font-weight: 800;
 }
 
 .interlock {
@@ -67,12 +129,61 @@
 
 .interlock_title {
   text-align: center;
+  padding: 8px;
+  font-size: 1.5em;
 }
 
 .interlock_description {
   text-align: center;
+  padding: 8px 50px;
 }
 
 .interlock_diagram {
+  height: 120px;
+  padding: 0px 60px;
+  background-image: url('../img/interlock_partial.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+.case_studies {
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+  overflow: auto;
+}
+
+.cs_title {
+  padding: 8px;
+  font-size: 1.5em;
+}
+
+.cs {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.cs_box {
+  height: 200px;
+  background-color: white;
+  box-sizing: border-box;
+  border-top: 5px;
+  border-bottom: 30px;
+  border-left: 5px;
+  border-right: 5px;
+  border-color: #dddde6;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.cs_desc {
+  padding: 10px;
+}
+
+.footer {
+  height: 40px;
+  background-color: #555;
 }

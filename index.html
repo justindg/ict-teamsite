@@ -9,7 +9,7 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/index.css">
@@ -22,57 +22,86 @@
 
         <!-- Add your site or application content here -->
         <div class="header">
-          <div class="logo_can">Can</div>
+          <div class="logo_can">CAN</div>
           <div class="logo_dxc">DXC.technology</div>
         </div>
-
         <div class="banner">
+          <div class="banner_content">
+            <div class="banner_title1">ICT</div>
+            <div class="banner_title2">INNOVATION<br> CAPABILITY TEAM</div>
+            <div class="btn_hello">Say Hello</div>
+          </div>
         </div>
-
         <div class="statement">
           The Innovation Capability team exists to provide exceptional support for in-house teams by empoweing them with tools and capabilities to take an innovative approach to solve their business challenges and opportunities.
         </div>
-
         <div class="services">
-          <div class="services_header">SERVICES</div>
+          <div class="services_header">Services</div>
           <div class="service service_ui">
             <div class="service_container">
-              <div class="ui_logo">Unleashing Innovation</div>
-              <div class="service_title">OPEN INNOVATION PLATFORM</div>
+              <div class="svc_logo ui_logo">Unleashing Innovation</div>
+              <div class="service_title">OPEN INNOVATION<br> PLATFORM</div>
               <div class="service_description">'Unleashing Innovation' is the CommBank Group's open idea collection and management</div>
+              <div class="service_learnmore">learn more</div>
             </div>
           </div>
           <div class="service service_ic">
             <div class="service_container">
-              <div class="ic_logo">Innovation Coaching</div>
-              <div class="service_title">COACHING, TRAINING & FACILITATION</div>
+              <div class="svc_logo ic_logo">Innovation Coaching</div>
+              <div class="service_title">COACHING, TRAINING &<br> FACILITATION</div>
               <div class="service_description">Innovation Capability Coaching supports and empowers our people to explore and solve their business problems and opportunities</div>
+              <div class="service_learnmore">learn more</div>
             </div>
           </div>
           <div class="service service_rp">
             <div class="service_container">
-              <div class="rp_logo">Rapid Prototyping</div>
-              <div class="service_title">PROTOTYPING SERVICES</div>
-              <div class="service_description">'Rapid Prototyping' is DXC Technology's capability offering to CommBank to birng ideas and concepts to life which can be tested and validated with stakeholders</div>
+              <div class="svc_logo rp_logo">Rapid Prototyping</div>
+              <div class="service_title">PROTOTYPING<br> SERVICES</div>
+              <div class="service_description">'Rapid Prototyping' is DXC Technology's capability offering to CommBank to bring ideas and concepts to life which can be tested and validated with stakeholders</div>
+              <div class="service_learnmore">learn more</div>
             </div>
           </div>
         </div>
-
         <div class="interlock">
           <div class="interlock_title">Innovation Capability Interlock Services</div>
           <div class="interlock_description">The ES Capabilities Innovation team have three distinct models of working, whereas, we can work in isolation, in partial interlock, or in full interlock with each other, depending on the need of the customer in the group.</div>
-
-          <div class="interlock_diagram">
-            
+          <!-- <div class="interlock_carousel">
+            <div class="interlock_diagram">
+            </div>
+            <!-- <div class="interlock_diagram">
+            </div> -->
+            <div class="interlock_diagram">
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="case_studies">
+          <div class="cs_title">Case Studies</div>
+          <div class="cs">
+            <div class="cs_box"></div>
+            <div class="cs_desc">Remote Workforce Engagement JumpStart Video</div>
+          </div>
+          <div class="cs">
+            <div class="cs_box"></div>
+            <div class="cs_desc">CommInsure Prototyping</div>
+          </div>
+          <div class="cs">
+            <div class="cs_box"></div>
+            <div class="cs_desc">Intrapreneur Challenge - UI example</div>
           </div>
         </div>
-
-
-
+        <div class="footer">
+        </div>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+        <script>
+          $('.interlock_carousel').slick({
+            dots: true
+          });
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

@@ -10,10 +10,21 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@font-face {
+  font-family: "Helvetica";
+  src: url("fonts/HelveticaRoman.OTF");
+}
+
+@font-face {
+  font-family: "HelveticaLt";
+  src: url("fonts/HelveticaLt.OTF");
+}
+
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    font-family: "HelveticaLt", "Arial", sans-serif;
 }
 
 /*
