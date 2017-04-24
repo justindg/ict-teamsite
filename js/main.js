@@ -7,7 +7,7 @@ $('.service').on('mouseenter', function() {
 $('.service').on('mouseleave', function() {
   $(this).find('.service_container').show();
   $(this).find('.service_container_back').hide();
-  $(this).find('.service_container_back').find('.service_back_item').slideUp(300);
+  $(this).find('.service_container_back').find('.service_back_item').slideUp(100);
 });
 
 $('.service_ui').on('click', function() {
