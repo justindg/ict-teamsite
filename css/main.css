@@ -27,6 +27,11 @@ html {
     font-family: "HelveticaLt", "Arial", sans-serif;
 }
 
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
