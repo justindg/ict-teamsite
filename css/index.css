@@ -5,6 +5,7 @@
 
 .header {
   overflow: auto;
+  background-color: #eee;
 }
 
 .header > div {
@@ -15,6 +16,11 @@
 
 .banner_container {
   position: relative;
+}
+
+.banner_carousel {
+
+  background-color: white;
 }
 
 .banner {
@@ -59,6 +65,7 @@
 .statement {
   text-align: center;
   padding: 20px 70px;
+  background-color: white;
 }
 
 .services {
@@ -269,6 +276,7 @@
   padding: 20px;
   text-align: center;
   overflow: auto;
+  background-color: white;
 }
 
 .cs_title {
@@ -307,4 +315,126 @@
 .footer {
   height: 40px;
   background-color: #555;
+}
+
+/** SERVICE SECTION CSS **/
+.service_section_title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8em;
+  background-color: white;
+  /*background-image: url('../img/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;*/
+  /*padding: 20px 20px 20px 20px;*/
+  padding: 20px 20px 0 20px;
+  color: black;
+  /*text-transform: uppercase;*/
+}
+
+.rp_item {
+  width: 33.33%;
+  float: left;
+}
+
+.prototypes {
+  /*width: 99.99%;*/
+  overflow: auto;
+  background-color: white;
+  /*margin: 0 20px;*/
+}
+
+.proto_container {
+  box-sizing: border-box;
+  /*border-radius: 5px 5px 0 0;*/
+  /*border-radius: 5px;*/
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+}
+
+.proto_container_active {
+  border: none;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #FC0;
+  position: relative;
+  cursor: pointer;
+}
+
+.products {
+  width: 99.99%;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
+  overflow: auto;
+  /*margin: 0 20px;*/
+  background-color: white;
+  min-height: 250px;
+}
+
+.product {
+  float: left;
+  width: 33.33%;
+}
+
+.product_container {
+  box-sizing: border-box;
+  min-height: 250px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.product_ul {
+  text-align: left;
+}
+
+.product_ul > li {
+  margin-bottom: 5px;
+}
+
+.proto_description {
+  /*padding: 8px;*/
+  font-weight: bold;
+}
+
+.proto_wrapper_wrapper {
+  background-color: white;
+  margin: 0 auto;
+}
+
+.proto_wrapper {
+
+  overflow: auto;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.products_storyboard {
+  /*display: none;*/
+}
+
+.products_immersive {
+  display: none;
+}
+
+.products_app {
+  display: none;
+}
+
+.products_immersive > .product {
+  display: none;
+}
+
+.product_statement {
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
 }
