@@ -429,7 +429,7 @@
 }
 
 .products_immersive > .product {
-  display: none;
+  /*display: none;*/
 }
 
 .product_statement {

@@ -9,29 +9,23 @@ $('.proto_container').on('click', function() {
 
   if ($(this).hasClass('proto_storyboard')) {
     $('.products_storyboard').show();
-    $('.products_storyboard').find('.product')
-      .each(function(index){
-        $(this).delay(delay).fadeIn(300);
-        delay = delay + 300;
-      })
+    // $('.products_storyboard').find('.product')
+    //   .each(function(index){
+    //     $(this).delay(delay).fadeIn(300);
+    //     delay = delay + 300;
+    //   });
+
+    $('.products_storyboard').find('.product').fadeIn(300);
   }
 
   if ($(this).hasClass('proto_immersive')) {
     $('.products_immersive').show();
-    $('.products_immersive').find('.product')
-      .each(function(index){
-        $(this).delay(delay).fadeIn(300);
-        delay = delay + 300;
-      })
+    $('.products_immersive').find('.product').fadeIn(300);
   }
 
   if ($(this).hasClass('proto_app')) {
     $('.products_app').show();
-    $('.products_app').find('.product')
-      .each(function(index){
-        $(this).delay(delay).fadeIn(300);
-        delay = delay + 300;
-      })
+    $('.products_app').find('.product').fadeIn(300);
   }
 });
 
