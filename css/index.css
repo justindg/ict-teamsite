@@ -740,6 +740,7 @@
   padding: 15px 20px;
   height: 20px;
   cursor: pointer;
+  border-radius: 15px 0 0 15px;
 }
 
 .get_quote:hover {
