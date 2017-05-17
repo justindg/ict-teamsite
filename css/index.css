@@ -1,6 +1,6 @@
 .slick-dots {
-  position: absolute;
-  bottom: -35px;
+  /*position: absolute;
+  bottom: -35px;*/
 }
 
 .header {
@@ -38,16 +38,16 @@
 .banner_title1 {
   width: 40%;
   color: white;
-  font-size: 2em;
+  font-size: 3em;
   line-height: 1em;
-  font-family: "HelveticaBlk", "Arial", sans-serif;
+  font-family: "ProximaNovaBold", "Arial", sans-serif;
 }
 
 .banner_title2 {
   width: 40%;
   color: white;
-  font-size: 1em;
-  line-height: 1em;
+  font-size: 0.8em;
+  line-height: 1.2em;
   font-family: "HelveticaLt", "Arial", sans-serif;
 }
 
@@ -243,6 +243,7 @@
   overflow: auto;
   background-color: white;
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .interlock_title {
@@ -455,7 +456,8 @@
 /** NEW **/
 .pillars {
   overflow: auto;
-  padding: 20px 0 20px 0;
+  /*padding: 20px 0 20px 0;*/
+  margin: 20px 0;
 }
 
 .pillar_container {
@@ -625,7 +627,7 @@
 .spacer {
   overflow: auto;
   width: 5%;
-  height: 10vw;
+  height: 1vw;
   float: left;
 }
 
@@ -654,7 +656,7 @@
   overflow: auto;
   width: 25%;
   float: left;
-  padding: 0px 20px;
+  padding: 0px 20px 20px 20px;
   box-sizing: border-box;
   border-radius: 2px;
   background: white;
@@ -675,6 +677,12 @@
 .uiservice .title {
   font-family: "ProximaNovaBold", "Arial", sans-serif;
   font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.uiservice .subtitle {
+  font-size: 0.8em;
   text-align: center;
 }
 
@@ -720,4 +728,20 @@
   background-color: #54C2E8;
   color: white;
   padding: 20px;
+}
+
+.get_quote {
+  position: fixed;
+  bottom: 5%;
+  right: 0;
+  background-color: black;
+  color: white;
+  font-family: "ProximaNovaBold", sans-serif;
+  padding: 15px 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.get_quote:hover {
+  background-color: #FFCC00;
 }
