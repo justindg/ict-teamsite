@@ -10,26 +10,48 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-@font-face {
-  font-family: "Helvetica";
-  src: url("fonts/HelveticaRoman.OTF");
-}
+ @font-face {
+   font-family: "Helvetica";
+   src: url("fonts/Helvetica.ttf");
+ }
 
-@font-face {
-  font-family: "HelveticaLt";
-  src: url("fonts/HelveticaLt.OTF");
+ @font-face {
+   font-family: "HelveticaLt";
+   src: url("fonts/HelveticaLt.OTF");
+ }
+
+ @font-face {
+   font-family: "HelveticaBold";
+   src: url("fonts/HelveticaNeue-Bold.ttf");
+ }
+
+ @font-face {
+   font-family: "HelveticaBlk";
+   src: url("fonts/HelveticaBlk.OTF");
+ }
+
+ @font-face {
+   font-family: "ProximaNovaBold";
+   src: url("fonts/ProximaNova-Bold.ttf");
+ }
+
+ @font-face {
+   font-family: "HelveticaBlk";
+   src: url("fonts/HelveticaBlk.OTF");
+ }
+
+b {
+  font-family: "HelveticaBold";
 }
 
 html {
-    color: #222;
     font-size: 1em;
-    line-height: 1.4;
     font-family: "HelveticaLt", "Arial", sans-serif;
 }
 
 body {
-  margin: 0 auto;
-  /*background-color: black;*/
+  background-color: #eee;
+  padding: 0px 24px;
 }
 
 /*
@@ -53,6 +75,10 @@ body {
 /*
  * A better looking default horizontal rule
  */
+
+.cbagold {
+  color: #FFCC00;
+}
 
 hr {
     display: block;

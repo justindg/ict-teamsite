@@ -5,7 +5,6 @@
 
 .header {
   overflow: auto;
-  background-color: #eee;
 }
 
 .header > div {
@@ -24,26 +23,32 @@
 }
 
 .banner {
-  height: 250px;
   background-color: #ddd;
   background-image: url('../img/banner.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
+
+  padding: 80px 30px;
+  box-sizing: border-box;
+
+  box-shadow: 0px 5px 10px grey;
 }
 
 .banner_title1 {
+  width: 40%;
   color: white;
-  font-size: 4em;
-  font-weight: 800;
+  font-size: 2em;
   line-height: 1em;
+  font-family: "HelveticaBlk", "Arial", sans-serif;
 }
 
 .banner_title2 {
+  width: 40%;
   color: white;
-  font-size: 2em;
-  font-weight: 100;
+  font-size: 1em;
   line-height: 1em;
+  font-family: "HelveticaLt", "Arial", sans-serif;
 }
 
 .btn_hello {
@@ -67,7 +72,7 @@
   padding: 20px 70px;
   background-color: white;
 }
-
+/*
 .services {
   padding: 20px;
   box-sizing: border-box;
@@ -148,7 +153,7 @@
 .svc > div {
   display: table-cell;
   vertical-align: middle;
-}
+}*/
 
 .svc1 {
   background-image: url('../img/svc1.png');
@@ -215,7 +220,7 @@
   font-family: "Helvetica", "Arial", sans-serif;
   font-weight: 700;
 }
-
+/*
 .service_title {
   padding: 8px;
   font-size: 1.2em;
@@ -231,18 +236,25 @@
   font-size: 0.8em;
   color: #C30;
   font-weight: 800;
-}
+}*/
 
 .interlock {
   padding: 20px;
-  /*overflow: auto;*/
+  overflow: auto;
+  background-color: white;
   box-sizing: border-box;
 }
 
 .interlock_title {
+  font-family: "ProximaNovaBold", sans-serif;
   text-align: center;
   padding: 8px;
+  box-sizing: border-box;
   font-size: 1.5em;
+}
+
+.interlock_carousel {
+  overflow: hidden;
 }
 
 .interlock_description {
@@ -273,6 +285,7 @@
 }
 
 .case_studies {
+  font-family: "ProximaNovaBold", sans-serif;
   padding: 20px;
   text-align: center;
   overflow: auto;
@@ -437,4 +450,274 @@
   padding-top: 20px;
   padding-left: 20%;
   padding-right: 20%;
+}
+
+/** NEW **/
+.pillars {
+  overflow: auto;
+  padding: 20px 0 20px 0;
+}
+
+.pillar_container {
+  overflow: auto;
+  width: 30%;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background: white;
+  line-height: 1em;
+  cursor: pointer;
+  /*box-shadow: 0px 5px 5px #aaa;*/
+}
+
+.pillar_container:hover {
+  background-color: #FFCC00;
+  /*box-shadow: 0px 5px 10px grey;*/
+}
+
+.pillar_container_active {
+  background-color: #FFCC00;
+}
+
+.pillar {
+
+}
+
+.pillar .icon {
+  /*float: left;*/
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.pillar .title {
+  font-family: "ProximaNovaBold", "Arial", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.pillar .description {
+}
+
+.pillar_container {
+  overflow: auto;
+  width: 30%;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background: white;
+  line-height: 1em;
+  cursor: pointer;
+}
+
+.pillar_container:hover {
+  background-color: #FFCC00;
+}
+
+.pillar_container_active {
+  background-color: #FFCC00;
+}
+
+.pillar {
+
+}
+
+.pillar .icon {
+  /*float: left;*/
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.pillar .title {
+  font-family: "ProximaNovaBold", "Arial", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.pillar .description {
+}
+
+.row {
+  overflow: auto;
+  clear: both;
+  width: 100%:
+}
+
+/**/
+
+.service_statement_container {
+  background-color: white;
+  padding: 30px 80px 10px 80px;
+}
+
+.service_statement {
+  text-align: center;
+  background-color: #333;
+  padding: 20px;
+  font-family: "ProximaNovaBold";
+  color: white;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.service_statement_h1 {
+  margin-bottom: 10px;
+}
+
+.service_statement_col {
+  width: 33.33%;
+  float: left;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.service_container {
+  overflow: auto;
+  width: 30%;
+  float: left;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background: white;
+  line-height: 1em;
+  cursor: pointer;
+
+}
+
+.service {
+  padding: 10px;
+  box-sizing: border-box;
+  /*box-shadow: 0 5px 10px grey;*/
+}
+
+.service:hover {
+  /*background-color: #54C2E8;*/
+  /*box-shadow: 0 5px 10px grey;*/
+}
+
+.service .icon {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.service .title {
+  font-family: "ProximaNovaBold", "Arial", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.service .description {
+  font-size: 0.8em;
+}
+
+.service .description ul {
+  padding-left: 20px;
+  /*list-style: none;*/
+}
+
+.service .description ul li {
+  margin: 5px 0;
+}
+
+.spacer {
+  overflow: auto;
+  width: 5%;
+  height: 10vw;
+  float: left;
+}
+
+.content {
+  display: none;
+  width: 100%;
+  overflow: auto;
+  /*height: 300px;*/
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color: white;
+  /*padding: 30px;*/
+  box-shadow: 0px 5px 10px gray;
+  margin-bottom: 20px;
+}
+
+.offerings {
+  text-align: center;
+  padding: 10px;
+  font-family: "ProximaNovaBold", sans-serif;
+  color: white;
+  background-color: black;
+}
+
+.uiservice_container {
+  overflow: auto;
+  width: 25%;
+  float: left;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background: white;
+  line-height: 1em;
+  cursor: pointer;
+}
+
+.uiservice {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.uiservice .icon {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.uiservice .title {
+  font-family: "ProximaNovaBold", "Arial", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.uiservice .description {
+  font-size: 0.8em;
+}
+
+.uiservice .description ul {
+  padding-left: 20px;
+  /*list-style: none;*/
+}
+
+.uiservice .description ul li {
+  margin: 5px 0;
+}
+
+.row_ui {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.row_ui_label {
+  margin: 20px 0 10px 0;
+  padding: 10px 0;
+  background-color: black;
+  color: white;
+  font-family: "ProximaNovaBold", sans-serif;
+}
+
+.ui_col {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.helper {
+  overflow: auto;
+  padding: 20px 0 0 0;
+}
+
+.helper_text {
+  font-family: "ProximaNovaBold", sans-serif;
+  background-color: #54C2E8;
+  color: white;
+  padding: 20px;
 }
