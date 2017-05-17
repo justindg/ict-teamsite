@@ -1,3 +1,20 @@
+$('.banner_carousel').slick({
+  dots: true,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false,
+  pauseOnHover: false
+});
+
+$('.interlock_carousel').slick({
+  dots: true,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  pauseOnHover: false
+});
+
 $('.service').on('mouseenter', function() {
   $(this).find('.service_container').hide();
   $(this).find('.service_container_back').show();
