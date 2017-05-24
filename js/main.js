@@ -11,6 +11,7 @@ $('.interlock_carousel').slick({
   dots: true,
   infinite: true,
   autoplay: true,
+  arrows: true,
   autoplaySpeed: 8000,
   pauseOnHover: false
 });
@@ -74,3 +75,8 @@ $('.service_ic').on('click', function() {
 $('.service_rp').on('click', function() {
   window.location.href = 'prototyping.html';
 });
+
+// $('.get_quote').on('mouseenter', function() {
+//   console.log('ads');
+//   $('.get_quote').addClass('get_quote_active');
+// });
