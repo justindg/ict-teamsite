@@ -1,12 +1,3 @@
-$('.banner_carousel').slick({
-  dots: true,
-  infinite: true,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  arrows: false,
-  pauseOnHover: false
-});
-
 $('.interlock_carousel').slick({
   dots: true,
   infinite: true,
@@ -76,7 +67,10 @@ $('.service_rp').on('click', function() {
   window.location.href = 'prototyping.html';
 });
 
-// $('.get_quote').on('mouseenter', function() {
-//   console.log('ads');
-//   $('.get_quote').addClass('get_quote_active');
-// });
+$('.get_quote').on('click', function() {
+  $('.modal-contact').show();
+});
+
+$('.icon_close').on('click', function() {
+  $('.modal').parent().hide();
+});
