@@ -74,3 +74,7 @@ $('.get_quote').on('click', function() {
 $('.icon_close').on('click', function() {
   $('.modal').parent().hide();
 });
+
+$('.cs_hololens').on('click', function() {
+  window.open('https://vimeo.com/218984583', '_blank');
+})

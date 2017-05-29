@@ -46,7 +46,7 @@
 .ict_title {
   float: left;
   line-height: 80px;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "ProximaNovaBold", sans-serif;
   /*text-transform: uppercase;*/
   padding-left: 15px;
@@ -88,8 +88,9 @@
   width: 40%;
   color: white;
   font-size: 3em;
-  line-height: 1em;
+  line-height: 0.9em;
   font-family: "ProximaNovaBold", "Arial", sans-serif;
+  margin-bottom: 10px;
 }
 
 .banner_title2 {
@@ -374,20 +375,54 @@
   /*background-position: center;*/
   /*background-repeat: no-repeat;*/
   box-shadow: 0px 2px 5px grey;
+  cursor: pointer;
+}
+
+.cs_box:hover {
+  box-shadow: 0px 5px 15px grey;
 }
 
 .cs_pic {
+  height: 250px;
+  /*background-image: url('../img/polaroid_hololens.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;*/
+}
+
+.cs_hololens {
   height: 250px;
   background-image: url('../img/polaroid_hololens.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /*box-shadow: 0px 2px 5px grey;*/
+}
+
+.cs_jumpstart {
+  height: 250px;
+  background-image: url('../img/polaroid_hololens.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cs_unleashing {
+  height: 250px;
+  background-image: url('../img/polaroid_innovation.jpg');
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 .cs_desc {
-  padding: 20px 10px;
+  padding: 20px 10px 0 10px;
   /*border: 1px solid black;*/
+}
+
+.cs_subtext {
+  padding: 20px 10px;
+  font-family: "HelveticaLt", sans-serif;
+  font-size: 0.8em;
 }
 
 /** SERVICE SECTION CSS **/
@@ -804,7 +839,7 @@
   background-color: #FFCC00;
   color: white;
   font-family: "ProximaNovaBold", sans-serif;
-  padding: 10px 15px;
+  padding: 8.5px 15px;
   height: 20px;
   cursor: pointer;
   /*opacity: 0.7;*/
