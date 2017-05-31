@@ -18,8 +18,8 @@ $('#pillar_ic').on('click', function() {
   $('.pillar_container').removeClass('pillar_container_active');
   $(this).addClass('pillar_container_active');
   $('.content').hide();
-  $('.content_ic').fadeIn(200);
-
+  // $('.content_ic').fadeIn(200);
+  $('.content_ic').show();
   $(this)[0].scrollIntoView(true);
 });
 
@@ -28,8 +28,8 @@ $('#pillar_ui').on('click', function() {
   $('.pillar_container').removeClass('pillar_container_active');
   $(this).addClass('pillar_container_active');
   $('.content').hide();
-  $('.content_ui').fadeIn(200);
-
+  // $('.content_ui').fadeIn(200);
+  $('.content_ui').show();
   $(this)[0].scrollIntoView(true);
 });
 
@@ -38,8 +38,8 @@ $('#pillar_rp').on('click', function() {
   $('.pillar_container').removeClass('pillar_container_active');
   $(this).addClass('pillar_container_active');
   $('.content').hide();
-  $('.content_rp').fadeIn(200);
-
+  // $('.content_rp').fadeIn(200);
+  $('.content_rp').show();
   $(this)[0].scrollIntoView(true);
 });
 
@@ -69,12 +69,36 @@ $('.service_rp').on('click', function() {
 
 $('.get_quote').on('click', function() {
   $('.modal-contact').show();
+  $('body').addClass('modal-open');
+});
+
+$('.banner_get_quote').on('click', function() {
+  $('.modal-contact').show();
+  $('body').addClass('modal-open');
+});
+
+$('.cs_hololens').on('click', function() {
+  $('.modal-hololens').show();
+  $('body').addClass('modal-open');
+});
+
+$('.cs_jumpstart').on('click', function() {
+  $('.modal-jumpstart').show();
+  $('body').addClass('modal-open');
+});
+
+$('.cs_unleashing').on('click', function() {
+  $('.modal-unleashing').show();
+  var url = "https://www.commbank.com.au/guidance/newsroom/crowd-sourcing-ideas-for-increased-innovation-201705.html"
+  window.open(url);
 });
 
 $('.icon_close').on('click', function() {
   $('.modal').parent().hide();
+  $('body').removeClass('modal-open');
 });
 
-$('.cs_hololens').on('click', function() {
-  window.open('https://vimeo.com/218984583', '_blank');
-})
+// $('body').on('click', function() {
+//
+//   $('.modal').parent().hide();
+// })

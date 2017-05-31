@@ -44,6 +44,10 @@ b {
   font-family: "HelveticaBold";
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
     font-size: 1em;
     font-family: "HelveticaLt", "Arial", sans-serif;
@@ -51,7 +55,12 @@ html {
 
 body {
   background-color: #fff;
-  padding: 0px 100px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 /*
@@ -138,6 +147,18 @@ textarea {
    ========================================================================== */
 
 .modal-contact {
+  /*display: none;*/
+}
+
+.modal-hololens {
+  display: none;
+}
+
+.modal-jumpstart {
+  display: none;
+}
+
+.modal-holelens {
   display: none;
 }
 
@@ -154,11 +175,10 @@ textarea {
   /*padding: 20px;*/
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.7);
-  color: white;
 }
 
 .modal-content {
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 30px 30px 30px 30px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -171,6 +191,11 @@ textarea {
   box-shadow: 0 2px 5px #000;
 }
 
+.content_container {
+  overflow: auto;
+  height: 90%;
+}
+
 .modal-content .close {
  position: absolute;
  right: 20px;
@@ -178,17 +203,24 @@ textarea {
  text-align: right;
  color: black;
  cursor: pointer;
+ opacity: 0.5;
 }
 
-.modal .content .title {
- font-family: "Roboto";
+.modal-content .title {
+ font-family: "ProximaNovaBold";
  font-size: 1.5em;
- color: #54C2E8;
+ /*color: #54C2E8;*/
+ color: black;
+ margin-bottom: 10px;
 }
 
-.modal .content .text {
-  z-index: 15;
-  color: white;
+.modal-content .text {
+  /*z-index: 15;*/
+  color: black;
+}
+
+.video_password {
+  text-align: center;
 }
 
 /* ==========================================================================

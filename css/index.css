@@ -35,6 +35,8 @@
 
 .header {
   overflow: auto;
+  /*position: fixed;
+  top: 0;*/
 }
 
 .header-accent {
@@ -73,7 +75,7 @@
 
 .banner {
   background-color: #ddd;
-  background-image: url('../img/banner.jpg');
+  background-image: url('../img/banner2.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -101,14 +103,19 @@
   font-family: "HelveticaLt", "Arial", sans-serif;
 }
 
-.btn_hello {
-  background-color: darkorange;
+.banner_get_quote {
+  margin-top: 10px;
+  background-color: #FFCC00;
   padding: 15px 30px;
   width: 100px;
   text-align: center;
   color: white;
-  font-size: 0.8em;
+  font-family: "ProximaNovaBold", "Arial", sans-serif;
   cursor: pointer;
+}
+
+.banner_get_quote:hover {
+  background-color: #54C2E8;
 }
 
 .banner_content {
@@ -122,88 +129,6 @@
   padding: 20px 70px;
   background-color: white;
 }
-/*
-.services {
-  padding: 20px;
-  box-sizing: border-box;
-  overflow: auto;
-}
-
-.services_header {
-  text-align: center;
-  padding-bottom: 20px;
-  font-size: 1.5em;
-}
-
-.service {
-  float: left;
-  width: 33.33%;
-}
-
-.service_ui {
-  padding-right: 5px;
-  box-sizing: border-box;
-}
-
-.service_ic {
-  padding-left: 5px;
-  padding-right: 5px;
-  box-sizing: border-box;
-}
-
-.service_rp {
-  padding-left: 5px;
-  box-sizing: border-box;
-}
-
-.service_container {
-  border: 1px solid gainsboro;
-  box-sizing: border-box;
-  height: 350px;
-  text-align: center;
-  padding: 20px;
-  background-color: white;
-  position: relative;
-  box-shadow: 1px 1px 2px gainsboro;
-  cursor: pointer;
-}
-
-.service_container_back {
-  border: 1px solid gainsboro;
-  box-sizing: border-box;
-  height: 350px;
-  text-align: center;
-  padding: 20px 50px;
-  background-color: white;
-  position: relative;
-  box-shadow: 1px 1px 2px gainsboro;
-  cursor: pointer;
-  display: none;
-}
-
-.service_back_item {
-  display: none;
-  text-align: left;
-  margin: 10px 0;
-  font-size: 0.8em;
-  clear: both;
-}
-
-.service_back_offering {
-  font-size: 0.8em;
-  font-weight: bold;
-}
-
-.svc {
-  min-height: 27px;
-  padding-left: 40px;
-  display: table;
-}
-
-.svc > div {
-  display: table-cell;
-  vertical-align: middle;
-}*/
 
 .svc1 {
   background-image: url('../img/svc1.png');
@@ -270,23 +195,6 @@
   font-family: "Helvetica", "Arial", sans-serif;
   font-weight: 700;
 }
-/*
-.service_title {
-  padding: 8px;
-  font-size: 1.2em;
-}
-
-.service_description {
-  padding: 8px;
-  line-height: 1.5em;
-}
-
-.service_learnmore {
-  text-align: center;
-  font-size: 0.8em;
-  color: #C30;
-  font-weight: 800;
-}*/
 
 .interlock {
   /*padding: 20px 0;*/
@@ -302,7 +210,7 @@
   text-align: center;
   padding: 15px 8px;
   color: white;
-  background-color: #000;
+  background-color: #54C2E8;
   box-sizing: border-box;
   font-size: 1.5em;
 }
@@ -356,7 +264,7 @@
 .cs_title {
   padding: 15px;
   font-size: 1.5em;
-  background-color: black;
+  background-color: #54C2E8;
   color: white;
 }
 
@@ -392,7 +300,7 @@
 
 .cs_hololens {
   height: 250px;
-  background-image: url('../img/polaroid_hololens.jpg');
+  background-image: url('../img/holotraining.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -400,7 +308,7 @@
 
 .cs_jumpstart {
   height: 250px;
-  background-image: url('../img/polaroid_hololens.jpg');
+  background-image: url('../img/polaroid_jumpstart.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -408,14 +316,14 @@
 
 .cs_unleashing {
   height: 250px;
-  background-image: url('../img/polaroid_innovation.jpg');
+  background-image: url('../img/polaroid_intrapreneur.jpg');
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
 }
 
 .cs_desc {
-  padding: 20px 10px 0 10px;
+  padding: 20px 10px 20px 10px;
   /*border: 1px solid black;*/
 }
 
@@ -640,7 +548,8 @@
 .row {
   overflow: auto;
   clear: both;
-  width: 100%:
+  width: 100%;
+  padding: 10px 0;
 }
 
 /**/
@@ -673,9 +582,9 @@
 
 .service_container {
   overflow: auto;
-  width: 30%;
+  width: 33.33%;
   float: left;
-  padding: 20px 20px;
+  padding: 0px 20px;
   box-sizing: border-box;
   border-radius: 2px;
   background: white;
@@ -712,11 +621,12 @@
 
 .service .description ul {
   padding-left: 20px;
+  margin: 0;
   /*list-style: none;*/
 }
 
 .service .description ul li {
-  margin: 5px 0;
+  margin: 0 0 5px 0;
 }
 
 .spacer {
@@ -751,7 +661,7 @@
   overflow: auto;
   width: 25%;
   float: left;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 20px 0px 20px;
   box-sizing: border-box;
   border-radius: 2px;
   background: white;
@@ -788,6 +698,7 @@
 .uiservice .description ul {
   padding-left: 20px;
   /*list-style: none;*/
+  margin: 0;
 }
 
 .uiservice .description ul li {
@@ -800,7 +711,7 @@
 }
 
 .row_ui_label {
-  margin: 20px 0 10px 0;
+  margin: 20px 0 0 0;
   padding: 10px 0;
   background-color: black;
   color: white;
@@ -813,28 +724,47 @@
   text-align: center;
 }
 
+.row_label {
+  margin: 20px 0 0 0;
+  padding: 10px 0;
+  background-color: black;
+  color: white;
+  font-family: "ProximaNovaBold", sans-serif;
+}
+
+.label_col {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+}
+
+.row_border {
+  border-bottom: 1px solid #ddd;
+}
+
 .helper {
   overflow: auto;
   padding: 20px 0 0 0;
+  text-align: center;
 }
 
 .helper_text {
-  border-right: 300px solid #FFCC00;
+  /*border-right: 300px solid #FFCC00;*/
   box-sizing: border-box;
   font-family: "ProximaNovaBold", sans-serif;
-  background-color: #54C2E8;
-  color: white;
-  padding: 20px;
+  /*background-color: #54C2E8;*/
+  color: grey;
+  padding: 10px;
 }
 
 .get_quote {
   position: fixed;
-  /*top: 2%;*/
+  top: 10%;
   /*top: 0;*/
   right: 0;
   /*left: 5%;*/
-  bottom: 0;
-  /*border-radius: 15px 0 0 15px;*/
+  /*bottom: 0;*/
+  border-radius: 10px 0 0 10px;
   /*border-radius: 15px 15px 0 0;*/
   background-color: #FFCC00;
   color: white;
@@ -846,7 +776,7 @@
 }
 
 .get_quote:hover {
-  background-color: #000;
+  background-color: #54C2E8;
   opacity: 1;
   /*padding-right: 40px;*/
 }
@@ -870,10 +800,74 @@
 
 }
 
+.values {
+  overflow: auto;
+  padding: 0 0px 15px 0;
+}
+
+.value_title {
+  font-size: 1.3em;
+  padding: 15px;
+  background-color: #54C2E8;
+  color: white;
+  font-family: "ProximaNovaBold", sans-serif;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.value_description {
+  text-align: center;
+  padding: 20px;
+}
+
+.value {
+  width: 20%;
+  float: left;
+  padding: 0 10px;
+  box-sizing: border-box;
+  /*cursor: pointer;*/
+}
+
+.value_img {
+  text-align: center;
+}
+
+.value_container {
+  font-size: 1em;
+  font-family: "ProximaNovaBold";
+  background-color: #FFCC00;
+  padding: 12px 10px 10px 10px;
+  box-sizing: border-box;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  /*box-shadow: 0px 4px 0 grey;*/
+}
+
+.value_subtext {
+  padding: 10px 15px;
+  font-size: 0.8em;
+  background-color: #eee;
+  /*border-left: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;*/
+  box-sizing: border-box;
+  height: 100px;
+}
+
 .footer {
   text-align: left;
   padding: 10px 20px;
   background-color: #555;
   font-family: "ProximaNovaBold", sans-serif;
   color: white;
+}
+
+.footer a {
+  color: white;
+  font-size: 0.8em;
+}
+
+.yammer_logo {
+  height: 15px;
 }
