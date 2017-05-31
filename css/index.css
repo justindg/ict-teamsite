@@ -54,6 +54,10 @@
   padding-left: 15px;
 }
 
+.ict_title img {
+  margin-right: 10px;
+}
+
 .logo_can {
   float: right;
   padding: 15px;
