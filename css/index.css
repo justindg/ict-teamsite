@@ -472,7 +472,7 @@
 
 .pillar_container {
   overflow: auto;
-  width: 30%;
+  width: 32%;
   float: left;
   padding: 20px;
   box-sizing: border-box;
@@ -490,50 +490,6 @@
 
 .pillar_container_active {
   background-color: #FFCC00;
-}
-
-.pillar {
-
-}
-
-.pillar .icon {
-  /*float: left;*/
-  margin-right: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.pillar .title {
-  font-family: "ProximaNovaBold", "Arial", sans-serif;
-  font-size: 1.2em;
-  text-align: center;
-}
-
-.pillar .description {
-}
-
-.pillar_container {
-  overflow: auto;
-  width: 30%;
-  float: left;
-  padding: 20px;
-  box-sizing: border-box;
-  border-radius: 2px;
-  background: white;
-  line-height: 1em;
-  cursor: pointer;
-}
-
-.pillar_container:hover {
-  background-color: #FFCC00;
-}
-
-.pillar_container_active {
-  background-color: #FFCC00;
-}
-
-.pillar {
-
 }
 
 .pillar .icon {
@@ -638,7 +594,7 @@
 
 .spacer {
   overflow: auto;
-  width: 5%;
+  width: 1%;
   height: 1vw;
   float: left;
 }

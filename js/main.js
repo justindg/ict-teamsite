@@ -20,7 +20,7 @@ $('#pillar_ic').on('click', function() {
   $('.content').hide();
   // $('.content_ic').fadeIn(200);
   $('.content_ic').show();
-  $(this)[0].scrollIntoView(true);
+  // $(this)[0].scrollIntoView(true);
 });
 
 $('#pillar_ui').on('click', function() {
@@ -30,7 +30,7 @@ $('#pillar_ui').on('click', function() {
   $('.content').hide();
   // $('.content_ui').fadeIn(200);
   $('.content_ui').show();
-  $(this)[0].scrollIntoView(true);
+  // $(this)[0].scrollIntoView(true);
 });
 
 $('#pillar_rp').on('click', function() {
@@ -40,7 +40,7 @@ $('#pillar_rp').on('click', function() {
   $('.content').hide();
   // $('.content_rp').fadeIn(200);
   $('.content_rp').show();
-  $(this)[0].scrollIntoView(true);
+  // $(this)[0].scrollIntoView(true);
 });
 
 $('.service').on('mouseenter', function() {
