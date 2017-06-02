@@ -83,11 +83,9 @@
   background-size: cover;
   background-position: center;
   position: relative;
-
   padding: 80px 30px;
   box-sizing: border-box;
-
-  box-shadow: 0px 2px 5px grey;
+  /*box-shadow: 0px 2px 5px grey;*/
 }
 
 .banner_title1 {
@@ -112,7 +110,7 @@
   background-color: #FFCC00;
   padding: 15px 30px;
   text-align: center;
-  color: black;
+  color: white;
   font-family: "ProximaNovaBold", "Arial", sans-serif;
   cursor: pointer;
   float: left;
@@ -219,7 +217,7 @@
   color: white;
   background-color: #54C2E8;
   box-sizing: border-box;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .interlock_carousel {
@@ -270,7 +268,7 @@
 
 .cs_title {
   padding: 15px;
-  font-size: 1.5em;
+  font-size: 1.2em;
   background-color: #54C2E8;
   color: white;
 }
@@ -330,12 +328,12 @@
 }
 
 .cs_desc {
-  padding: 20px 10px 20px 10px;
+  padding: 20px 10px 0 10px;
   /*border: 1px solid black;*/
 }
 
 .cs_subtext {
-  padding: 20px 10px;
+  padding: 10px 10px 20px 10px;
   font-family: "HelveticaLt", sans-serif;
   font-size: 0.8em;
 }
@@ -465,9 +463,10 @@
 /** NEW **/
 .pillars {
   overflow: auto;
+  padding-bottom: 5px;
   /*padding: 20px 0 20px 0;*/
   /*box-shadow: 0 1px 5px #ccc;*/
-  margin: 20px 0;
+  margin: 20px 0 5px 0;
 }
 
 .pillar_container {
@@ -476,7 +475,7 @@
   float: left;
   padding: 20px;
   box-sizing: border-box;
-  border-radius: 2px;
+  /*border-radius: 2px;*/
   background: white;
   line-height: 1em;
   cursor: pointer;
@@ -485,11 +484,12 @@
 
 .pillar_container:hover {
   background-color: #FFCC00;
-  /*box-shadow: 0px 5px 10px grey;*/
+  box-shadow: 0 2px 5px grey;
 }
 
 .pillar_container_active {
   background-color: #FFCC00;
+  box-shadow: 0 2px 5px grey;
 }
 
 .pillar .icon {
@@ -519,16 +519,16 @@
 
 .service_statement_container {
   background-color: white;
-  padding: 10px 80px 10px 80px;
+  padding: 10px 0 0 0;
 }
 
 .service_statement {
   text-align: center;
-  background-color: #333;
-  padding: 20px;
+  background-color: #555;
+  padding: 20px 80px;
   font-family: "ProximaNovaBold";
   color: white;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   overflow: auto;
 }
 
@@ -657,13 +657,20 @@
   font-family: "ProximaNovaBold", "Arial", sans-serif;
   font-size: 1.2em;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .uiservice .subtitle {
   font-size: 0.8em;
   text-align: center;
+  margin-top: 10px;
 }
+
+.service .subtitle {
+  font-size: 0.8em;
+  margin-top: 10px;
+  text-align: center;
+}
+
 
 .uiservice .description {
   font-size: 0.8em;
@@ -685,7 +692,7 @@
 }
 
 .row_ui_label {
-  margin: 20px 0 0 0;
+  margin: 0 0 0 0;
   padding: 10px 0;
   background-color: black;
   color: white;
@@ -699,7 +706,7 @@
 }
 
 .row_label {
-  margin: 20px 0 0 0;
+  margin: 0 0 0 0;
   padding: 10px 0;
   background-color: black;
   color: white;
@@ -717,8 +724,7 @@
 }
 
 .helper {
-  overflow: auto;
-  padding: 20px 0 0 0;
+  padding: 0 0 0 0;
   text-align: center;
 }
 
@@ -726,6 +732,7 @@
   /*border-right: 300px solid #FFCC00;*/
   box-sizing: border-box;
   font-family: "ProximaNovaBold", sans-serif;
+  font-size: 1em;
   /*background-color: #54C2E8;*/
   color: grey;
   padding: 10px;
@@ -738,7 +745,7 @@
   right: 0;
   /*left: 5%;*/
   /*bottom: 0;*/
-  border-radius: 10px 0 0 10px;
+  border-radius: 5px 0 0 5px;
   /*border-radius: 15px 15px 0 0;*/
   background-color: #FFCC00;
   color: white;
