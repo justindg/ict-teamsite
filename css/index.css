@@ -63,17 +63,11 @@
   padding: 15px;
 }
 
-/*.header > div {
-  float: left;
-  font-weight: 800;
-}*/
-
 .banner_container {
   position: relative;
 }
 
 .banner_carousel {
-
   background-color: white;
 }
 
@@ -83,9 +77,22 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  padding: 80px 30px;
+  padding: 150px 30px;
+  /*height: 400px;*/
   box-sizing: border-box;
   /*box-shadow: 0px 2px 5px grey;*/
+  text-align: center;
+}
+
+.banner_logo {
+  text-align: center;
+}
+
+.banner_title {
+  font-family: "Lato", serif;
+  font-size: 4em;
+  text-align: center;
+  color: white;
 }
 
 .banner_title1 {
@@ -130,9 +137,14 @@
 }
 
 .statement {
+  font-family: "PT Serif", serif;
+  font-size: 1.5em;
   text-align: center;
-  padding: 20px 70px;
+  padding: 40px 0;
+  margin: auto 10%;
   background-color: white;
+  text-align: left;
+  border-bottom: 2px solid black;
 }
 
 .svc1 {
@@ -211,13 +223,15 @@
 }
 
 .interlock_title {
-  font-family: "ProximaNovaBold", sans-serif;
+  /*font-family: "ProximaNovaBold", sans-serif;*/
+  font-family: "PT Serif", serif;
   text-align: center;
-  padding: 15px 8px;
-  color: white;
-  background-color: #54C2E8;
+  padding: 20px 0;
+  margin: auto 10%;
+  color: black;
+  /*background-color: #54C2E8;*/
   box-sizing: border-box;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .interlock_carousel {
@@ -260,10 +274,21 @@
 
 .case_studies {
   font-family: "ProximaNovaBold", sans-serif;
-  padding: 20px 0;
+  /*padding: 20px 0;*/
+  margin: auto 5%;
   text-align: center;
   overflow: auto;
   background-color: white;
+}
+
+.tbl-cs {
+  width: 100%;
+  border-spacing: 30px 0;
+}
+
+.tbl-cs tbody tr td {
+  width: 33.33%;
+  vertical-align: top;
 }
 
 .cs_title {
@@ -271,12 +296,13 @@
   font-size: 1.2em;
   background-color: #54C2E8;
   color: white;
+  text-align: left;
 }
 
 .cs {
   float: left;
-  width: 33.33%;
-  padding: 30px;
+  /*width: 33.33%;*/
+  /*padding: 30px;*/
   box-sizing: border-box;
 }
 
@@ -287,12 +313,12 @@
   /*background-size: cover;*/
   /*background-position: center;*/
   /*background-repeat: no-repeat;*/
-  box-shadow: 0px 2px 5px grey;
+  /*box-shadow: 0px 2px 5px grey;*/
   cursor: pointer;
 }
 
 .cs_box:hover {
-  box-shadow: 0px 5px 15px grey;
+  /*box-shadow: 0px 5px 15px grey;*/
 }
 
 .cs_pic {
@@ -328,14 +354,29 @@
 }
 
 .cs_desc {
-  padding: 20px 10px 0 10px;
+  /*padding: 20px 10px 0 10px;*/
   /*border: 1px solid black;*/
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2em;
+  padding: 10px 0;
 }
 
 .cs_subtext {
-  padding: 10px 10px 20px 10px;
-  font-family: "HelveticaLt", sans-serif;
-  font-size: 0.8em;
+  /*padding: 10px 10px 20px 10px;*/
+  font-family: "PT Serif", serif;
+  font-size: 1em;
+  color: #666;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.cs_services {
+  font-family: "PT Serif", serif;
+  font-size: 1em;
+  color: black;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 /** SERVICE SECTION CSS **/
@@ -460,13 +501,65 @@
   padding-right: 20%;
 }
 
+.section-header {
+  text-align: center;
+  font-family: "Lato", serif;
+  padding: 10px 0 20px 0;
+  margin: auto 10%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: black;
+  box-sizing: border-box;
+  font-size: 1.5em;
+}
+
+.section-description {
+  text-align: left;
+  font-family: "PT Serif", serif;
+  margin: auto 10%;
+  margin-bottom: 10px;
+  /*color: black;*/
+  box-sizing: border-box;
+  font-size: 1.2em;
+  color: #666;
+}
+
 /** NEW **/
 .pillars {
   overflow: auto;
   padding-bottom: 5px;
+  margin: auto 10%;
   /*padding: 20px 0 20px 0;*/
   /*box-shadow: 0 1px 5px #ccc;*/
-  margin: 20px 0 5px 0;
+  /*margin: 20px 0 5px 0;*/
+  border-bottom: 2px solid black;
+}
+
+.pillar {
+  height: 100px;
+  overflow: auto;
+  /*padding: 10px;
+  background-color: #f8f8f8;*/
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  /*border-bottom: 2px solid black;*/
+}
+
+.pillar-header {
+  font-family: "Lato", serif;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.pillar-image {
+  margin-right: 10px;
+}
+
+.pillar-description {
+  font-family: "PT Serif", serif;
+  font-size: 1.2em;
+  color: #666;
 }
 
 .pillar_container {
@@ -475,7 +568,7 @@
   float: left;
   padding: 20px;
   box-sizing: border-box;
-  /*border-radius: 2px;*/
+  border-radius: 300px;
   background: white;
   line-height: 1em;
   cursor: pointer;
@@ -783,57 +876,160 @@
 
 .values {
   overflow: auto;
-  padding: 0 0px 15px 0;
+  margin: auto 8%;
+  padding-bottom: 40px;
+  border-bottom: 2px solid black;
 }
 
-.value_title {
-  font-size: 1.3em;
-  padding: 15px;
-  background-color: #54C2E8;
-  color: white;
-  font-family: "ProximaNovaBold", sans-serif;
+.values-header {
   text-align: center;
+  /*font-family: "PT Serif";*/
+  font-family: "Lato";
+  font-size: 1.5em;
+  margin-top: 10px;
+  padding: 20px 0;
+}
+
+.tbl-values {
   width: 100%;
-  box-sizing: border-box;
+  border-spacing: 30px 0;
+  margin-bottom: 30px;
 }
 
-.value_description {
+.tbl-values tbody tr td {
+  margin: auto 10%;
   text-align: center;
-  padding: 20px;
+  vertical-align: top;
+  width: 33.33%;
+}
+
+.tbl-values2 {
+  width: 100%;
+  border-spacing: 30px 0;
+  padding: 0 10%;
+}
+
+.tbl-values2 tbody tr td {
+  margin: auto 10%;
+  text-align: center;
+  vertical-align: top;
+  width: 50%;
 }
 
 .value {
-  width: 20%;
-  float: left;
-  padding: 0 10px;
-  box-sizing: border-box;
-  /*cursor: pointer;*/
+  font-family: "PT Serif";
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.3em;
 }
 
 .value_img {
-  text-align: center;
+  text-align: left;
 }
 
-.value_container {
-  font-size: 1em;
-  font-family: "ProximaNovaBold";
-  background-color: #FFCC00;
-  padding: 12px 10px 10px 10px;
-  box-sizing: border-box;
-  border-radius: 5px 5px 0 0;
-  text-align: center;
-  /*box-shadow: 0px 4px 0 grey;*/
+.value-desc {
+  font-family: "PT Serif";
+  text-align: left;
+  color: #666;
 }
 
-.value_subtext {
-  padding: 10px 15px;
-  font-size: 0.8em;
-  background-color: #eee;
-  /*border-left: 1px solid grey;
-  border-bottom: 1px solid grey;
-  border-right: 1px solid grey;*/
-  box-sizing: border-box;
-  height: 100px;
+.team {
+  overflow: auto;
+  margin: auto 8%;
+  padding-bottom: 40px;
+  border-bottom: 2px solid black;
+}
+
+.team-header {
+  text-align: center;
+  /*font-family: "PT Serif";*/
+  font-family: "Lato";
+  font-size: 1.5em;
+  padding: 30px 0 30px 0;
+}
+
+.tbl-team {
+  width: 100%;
+  border-spacing: 0px 0;
+  /*margin-bottom: 30px;*/
+}
+
+.tbl-team tbody tr td {
+  margin: auto 10%;
+  text-align: center;
+  vertical-align: top;
+  width: 25%;
+}
+
+.avatar {
+  height: 300px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.eryk {
+  background: url('../img/eryk.jpg');
+  background-repeat: no-repeat;
+  background-size: 320px;
+}
+
+.eddy {
+  background: url('../img/eddy.jpg');
+  background-repeat: no-repeat;
+  background-size: 320px;
+  background-position: top center;
+}
+
+.jesse {
+  background: url('../img/jesse.jpg');
+  background-repeat: no-repeat;
+  background-size: 320px;
+}
+
+.amy {
+  background: url('../img/amy.jpg');
+  background-repeat: no-repeat;
+  background-size: 320px;
+}
+
+.justin {
+  background: url('../img/justin.jpg');
+  background-repeat: no-repeat;
+  background-size: 450px;
+  background-position: center;
+}
+
+
+.marc {
+  background: url('../img/marc.jpg');
+  background-repeat: no-repeat;
+  background-size: 550px;
+  background-position: left;
+}
+
+
+.raymon {
+  background: url('../img/raymon.jpg');
+  background-repeat: no-repeat;
+  background-size: 520px;
+  background-position: center;
+}
+
+
+.brandon {
+  background: url('../img/brandon.jpg');
+  background-repeat: no-repeat;
+  background-size: 520px;
+  background-position: center
+}
+
+
+.avatar-img {
+  /*overflow: auto;
+  background: url('../img/avatar.jpg');
+  height: 200px;*/
+  width: 100%;
 }
 
 .footer {
