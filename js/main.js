@@ -102,3 +102,11 @@ $('.icon_close').on('click', function() {
 //
 //   $('.modal').parent().hide();
 // })
+
+$('.avatar').on('mouseenter', function() {
+  $(this).find('.avatar-title').slideDown(200);
+});
+
+$('.avatar').on('mouseleave', function() {
+  $(this).find('.avatar-title').slideUp(200);
+});

@@ -982,6 +982,22 @@
   height: 300px;
   width: 100%;
   background-color: rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.avatar-title {
+  display: none;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  /*width: 100%;*/
+  font-family: "Lato";
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  color: white;
 }
 
 .eryk {
